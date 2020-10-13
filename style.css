@@ -6,6 +6,7 @@ body {
     font-family: Trebuchet MS;
     box-sizing: border-box;
     color: #535b60;
+    overflow-x: hidden;
 }
 .navigation {
     width: 100vw;
@@ -63,7 +64,7 @@ background-color: #960000;
     background-color: #5cb85c;
     border-radius: .25em;
     padding:0px 10px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-weight: 700;
     line-height: 1;
@@ -74,9 +75,10 @@ background-color: #960000;
 }
 .date {
     margin-left: 23.5rem;
- 
     width: 20rem;
     min-width: 9rem;
+    font-size: small;
+    font-style: italic;
 }
 .your-dashbord{
     width: 97%;
@@ -352,11 +354,21 @@ margin-bottom: 1rem;
         position: relative;
         font-size: 12px;
         top: 35rem;
+        left: -4.5rem;
+        min-width: 20rem;
         /* margin-left: 2rem; */
         margin-bottom: 3.2rem;
         padding: 0;
+        font-size: 11px;
+        margin-left: 0;
     }
-    
+    .change-name p{
+        font-size: 13px;
+    }
+    .portal{
+        position: absolute;
+        left: -0.1rem;
+    }
     .nav p{
         padding-top: 1rem;
         padding-bottom: 1rem; 
@@ -379,16 +391,19 @@ margin-bottom: 1rem;
     }
     .mail{
         position: relative;
-        top: 34rem;
+        right: 2rem;
+        top: 33rem;
         /* left: -15.2rem; */
         padding: 4px 4px ;
         margin: 0;
+        font-size: 11px;
     }
     .your-dashbord{
         position: relative;
         top: 2.7rem;
         right: 4rem;
         width: 94%;
+        margin-top: 1.8rem;
     }
     .basic{
         position: relative;
@@ -445,8 +460,17 @@ margin-bottom: 1rem;
 
 }
 @media screen and (max-width: 768px) {
+    body{
+        padding-left: 1.6rem;
+    }
+    .nav p{
+        width: 50%;
+    }
     .your-dashbord{
         width: 90%;
+    }
+    #info {
+        margin-left: 0.2rem;
     }
     .wrapper {
         width: 90%;
